@@ -1,0 +1,27 @@
+use_seed: True
+seed: 633
+num_gpu: 1
+api_key_path: ./api_keys.txt
+# eval config
+algorithm_name: gasketrag
+task: StrategyQA
+eval_datapath: './data/eval_datasets/StrategyQA/strategyqa_train_first_1000_samples.jsonl'
+output_dir: './data/eval_results/'
+# gasket config
+gasket_model_type: Openai_api
+gasket_model_name: llama3.1
+gasket_base: 'http://0.0.0.0:8001/v1'
+gasket_iter_num: 2
+# llm config
+llm_mode: Openai_api
+llm_name: ./model/Llama3-8B-baseline
+temperature: 0.0
+api_base: 'http://0.0.0.0:8000/v1'
+generation_stop: ''
+generate_maxlength: 300
+gpu_memory_utilization: 0.2
+# retrieval config
+realtime_retrieval: True
+retrieval_name: colbert_api
+n_docs: 10
+passages_max_length: -1

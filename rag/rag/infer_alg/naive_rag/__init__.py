@@ -1,0 +1,1 @@
+from rag.rag.infer_alg.naive_rag.naiverag import NaiveRag

@@ -1,0 +1,1 @@
+from rag.instruction_lab.instruction_lab import ALGORITHM_INSTRUCTIONS
