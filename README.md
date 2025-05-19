@@ -1,4 +1,4 @@
-# GasketRAG: Systematic Alignment of Large Language Models with Retrievers
+# Adaptive Iterative Retrieval for Enhanced Retrieval-Augmented Generation
 ## Install
 Make sure `pixi` is already installed, then the environment can be conveniently installed with:
 ```
@@ -33,7 +33,7 @@ sh run/run_kto_llama.sh
 ```
 
 ## Evaluation
-Start up the gasket model:
+Start up the adapter model:
 ```
 sh run/gasket_vllm.sh
 ```
